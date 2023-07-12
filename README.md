@@ -1,6 +1,6 @@
 # Testing Project: Bullet Journal
 
-A to-do application built using test driven development.
+A to-do list application built using test driven development.
 
 ## Authors
 [George Klemperer](https://www.github.com/GeorgeKlemperer)
