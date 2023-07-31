@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Basic Metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bullet Journal App</title>
-    <meta name="description" content="A todo list app styled after Ryder Carroll's Bullet Journal" />
+    <meta
+      name="description"
+      content="A todo list app styled after Ryder Carroll's Bullet Journal"
+    />
     <meta name="author" content="Dylan Cobb, George Klemperer" />
+
+    <link rel="icon" href="images/favicon.ico?" />
+
     <!-- Stylesheets and Scripts -->
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Bullet Journal App</h1>
+      <h1>Bullet Journal App</h1>
     </header>
     <main>
-        <!-- Further subdivide into sections -->
-        <section class="notes">
-            <div class="items">
-                <div class="date"></div>
-                <div class="spacer"></div>
-                <template id="toDoItemTemplate">
-                    <div class="toDo">
-                        <span class="toDoBullet" onclick="bulletSwitch(this)"></span>
-                        <span class="toDoItemText"></span>
-                    </div>
-                </template>
+      <!-- Further subdivide into sections -->
+      <section class="notes">
+        <div class="items">
+          <div class="date"></div>
+          <div class="spacer"></div>
+          <template id="toDoItemTemplate">
+            <div class="toDo">
+              <span class="toDoBullet" onclick="bulletSwitch(this)"></span>
+              <span class="toDoItemText"></span>
             </div>
-            <div class="interface">
-                <div class="input-line">
-                    <span class="bullet-type">•</span>
-                    <textarea class="text-input" rows="1" autofocus="true" id="text-input"></textarea>
-                    <!-- <button onclick="addItem()">Add</button> -->
-                    <button onclick="addItemUsingTemplate()" id="submit-button">Add</button>
-                </div>
-                <div class="selectors">
-                    <a href="javascript:;" onclick="indentLess()">&lt;</a>
-                    <span class="indent-level">0</span>
-                    <a href="javascript:;" onclick="indentMore()">&gt;</a>
-                    <a href="javascript:;" onclick="prevBullet()">&lt;</a>
-                    <span class="bullet-name">Task</span>
-                    <a href="javascript:;" onclick="nextBullet()">&gt;</a>
-                </div>
-            </div>
-        </section>
+          </template>
+        </div>
+        <div class="interface">
+          <div class="input-line">
+            <span class="bullet-type">•</span>
+            <textarea
+              class="text-input"
+              rows="1"
+              autofocus="true"
+              id="text-input"
+            ></textarea>
+            <!-- <button onclick="addItem()">Add</button> -->
+            <button onclick="addItemUsingTemplate()" id="submit-button">
+              Add
+            </button>
+          </div>
+          <div class="selectors">
+            <a href="javascript:;" onclick="indentLess()">&lt;</a>
+            <span class="indent-level">0</span>
+            <a href="javascript:;" onclick="indentMore()">&gt;</a>
+            <a href="javascript:;" onclick="prevBullet()">&lt;</a>
+            <span class="bullet-name">Task</span>
+            <a href="javascript:;" onclick="nextBullet()">&gt;</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script src="scripts.js"></script>
     <script src="index.tests.js"></script>
-</body>
-
+  </body>
 </html>
